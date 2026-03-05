@@ -13,7 +13,7 @@ async function fetchData() {
 
         const name = ['你在幹嘛', '你腦子壞掉了', '你嘴不要那麼賤', '你講那種話可以信嗎', '寒暑假交朋友一起來'];
 
-        for (let i = 0; i < sounds.length-1; i++) {
+        for (let i = 0; i <= sounds.length-1; i++) {
             const audio = document.createElement('audio')
             audio.id = sounds[i];
             audio.src = `sounds/${sounds[i]}.mp3`;
@@ -34,3 +34,4 @@ async function fetchData() {
 }
 
 fetchData();
+
